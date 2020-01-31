@@ -45,10 +45,10 @@ father weep in another room. The paper boat continues through the sewers to the 
 and out to sea as the rain clouds break overhead.';
 
 
-echo "Text sample:<br> {$textSamples}<br>";
-echo "These words occur once in the text.:<br>";
+echo "Text sample: {$textSamples}" . PHP_EOL;
+echo 'These words occur once in the text.:' . PHP_EOL;
 foreach (getUniqueWords($textSamples) as $key) {
-    echo "<strong> Unique word:</strong>{$key}  <br>";
+    echo "Unique word : {$key} " . PHP_EOL;
 }
 
 
